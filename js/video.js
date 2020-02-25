@@ -39,7 +39,7 @@ function mute() {
 	if(video.muted) {
 		video.muted=false;
 		document.getElementById("mute").innerHTML="Mute";
-		 console.log("Unmuted");
+		console.log("Unmuted");
 	}
 	else {
 		video.muted=true;
@@ -56,13 +56,11 @@ function changeVolume() {
 
 
 function gray() {
-  var gray = document.getElementById("myVideo");
-  gray.classList.toggle("grayscale");
-	console.log("In grayscale")
+  video.classList.toggle("grayscale");
+	console.log("In grayscale");
 }
 
 function color() {
-	var gray = document.getElementById("myVideo");
-  gray.classList.remove("grayscale");
-	console.log("In color")
+  video.classList.remove("grayscale");
+	console.log("In color");
 }
