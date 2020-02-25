@@ -27,9 +27,10 @@ function increaseSpeed() {
 function skipAhead() {
 	if(video.ended) {
 		video.currentTime=0;
+		video.playbackRate=1;
 		console.log("Current location is "+ video.currentTime);
 	}
-	else{
+	else {
 	video.currentTime += 60;
 	console.log("Current location is "+ video.currentTime);
 }
@@ -51,7 +52,7 @@ function mute() {
 function changeVolume() {
 	video.volume = volumeSlider.value / 100;
 	document.getElementById("volume").innerHTML=volumeSlider.value + '%';
-	console.log("Volume is " + volumeSlider.value / 100);
+	console.log("Volume is " + volumeSlider.value);
 }
 
 
