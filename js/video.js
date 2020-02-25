@@ -56,11 +56,13 @@ function changeVolume() {
 
 
 function gray() {
-  video.classList.toggle("grayscale");
+  var gray = document.getElementById("myVideo");
+  video.classList.add("grayscale");
 	console.log("In grayscale");
 }
 
 function color() {
-  video.classList.remove("grayscale");
+	var gray = document.getElementById("myVideo");
+  gray.classList.remove("grayscale");
 	console.log("In color");
 }
